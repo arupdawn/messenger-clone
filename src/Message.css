@@ -1,0 +1,72 @@
+.message {
+  margin-left: 10%;
+  margin-right: 12%;
+  margin-bottom: 10px;
+  width: fit-content;
+  max-width: 500px;
+  text-align: left;
+}
+
+.message__user {
+  margin-left: auto;
+  /*max-width: 270px;*/
+  color: white;
+}
+
+.message__userCard {
+  background-color: #0b81ff !important;
+  color: white !important;
+  text-align: left !important;
+}
+
+.message__guestCard {
+  background-color: #e9e9eb !important;
+}
+
+.message > span {
+  margin-top: 1px;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+.message__user > span {
+  color: black !important;
+}
+
+.MuiCardContent-root{
+    padding: 10px 15px !important;
+}
+
+.MuiTypography-h6{
+    font-size: 1.1rem !important;
+}
+
+.MuiPaper-rounded{
+    border-radius: 20px !important;
+}
+
+@media only screen and (max-width: 429px) {
+    /* For mobile phones: */
+    .message {
+        margin-left:5%;
+        margin-right:5%;
+        max-width: 370px;
+    }
+    .message__user {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    /* For mobile phones: */
+    .message {
+        max-width: 320px;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    /* For mobile phones: */
+    .message {
+        max-width: 270px;
+    }
+}

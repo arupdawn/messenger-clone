@@ -1,38 +1,81 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__header {
+  position: fixed;
+  top: 0;
+  text-align: left;
+  z-index: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 10px;
+  background-color: white;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.app__header > img {
+  margin-right: 10px;
+  height: 70px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__form {
+  padding: 7px 20px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: #e9e9eb;
+  width: 75.6%;
+  margin-left: 9.7%;
+}
+
+.app__formNext {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+}
+
+.app__input {
+  background-color: white !important;
+  padding: 10px;
+  flex: 1;
+  border-radius: 7px;
+}
+
+.app__iconButton {
+  flex: 0;
+  margin-left: 3px !important;
+}
+
+.app__sendButton {
+  font-size: 45px !important;
+}
+
+/*.chat__MessagesOuter {
+  flex-shrink: 10 !important;
+  height: 100% !important;
+  overflow: auto !important;
+}
+
+
+.chat__MessagesOuter,.chat__messages {
+  transform: scale(1, -1) !important; 
+}*/
+
+.chat__messages {
+  margin-top:100px;
+  margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 429px) {
+  /* For mobile phones: */
+  .app__form {
+    width: 93%;
+    margin-left: 0%;
   }
-  to {
-    transform: rotate(360deg);
+  .app__header {
+    width: 95%;
   }
 }
+
